@@ -17,18 +17,25 @@
             <version>8.0.26</version>
         </dependency>-->
 
-        <!--&lt;!&ndash;  可以直接写下面的依赖即可，其中包括 HSQLDB、Oracle、MYSQL、PostgreSQL、MariaDB、Microsoft SQL Server &ndash;&gt;-->
+        <!-- &lt;!&ndash;  可以直接写下面的依赖即可，其中包括 HSQLDB、Oracle、MYSQL、PostgreSQL、MariaDB、Microsoft SQL Server &ndash;&gt; -->
         <!-- 这个加载的mysql驱动版本是8.0.11，需留意driverClass的配置 -->
-        <dependency>
+        <!--<dependency>
             <groupId>org.apereo.cas</groupId>
             <artifactId>cas-server-support-jdbc-drivers</artifactId>
             <version>${cas.version}</version>
-        </dependency>
+        </dependency>-->
 
-        <!--jdbc认证需要添加的，这个是cas的依赖包-->
-        <dependency>
+        <!-- cas的jdbc认证依赖包 -->
+       <!-- <dependency>
             <groupId>org.apereo.cas</groupId>
             <artifactId>cas-server-support-jdbc</artifactId>
+            <version>${cas.version}</version>
+        </dependency>-->
+
+        <!-- cas的ldap认证依赖包 -->
+        <dependency>
+            <groupId>org.apereo.cas</groupId>
+            <artifactId>cas-server-support-ldap</artifactId>
             <version>${cas.version}</version>
         </dependency>
     </dependencies>
